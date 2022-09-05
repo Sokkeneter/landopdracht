@@ -1,0 +1,155 @@
+/*navigation and header things*/
+.navigation_bar_item {
+    display: inline;
+    padding: 10px;
+    font-size: 8mm;
+}
+
+.navigation_bar_item a  {
+    color: white;
+    font-weight: bold;
+}
+
+#navigation_bar {
+    background-color: lightpink;
+    padding: 5px;
+    width: 100%;
+}
+
+
+#header_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+/*body*/
+body {
+    background-image: url("/img/body_bg.png");
+    background-color: #fff2db;
+}
+
+main {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px;
+    margin-inline: 200px;
+    padding: 20px;
+    max-width: 100vw;
+    background-color: #ffdbe0;
+}
+
+main a:link, footer a:link  {
+    color: #be4670;
+}
+main a:hover, footer a:hover  {
+    color: #ff7bab;
+}
+
+main h1 {
+    font-size: 4em;
+    font-family: "Times New Roman ", serif;
+    margin-bottom: 0;
+}
+main h2 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+main p {
+    font-family: "math", "math";
+    font-size: 25px;
+}
+
+main .text_gradient_animation {
+    font-weight: bold;
+    animation-name: colorfade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorfade {
+    0% {
+        color: #8337ff
+    }
+    50% {
+        color: #ff0035
+    }
+    100% {
+        color: #8337ff
+    }
+}
+
+.figure {
+    float: right;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    font-family: monospace, "Courier New";
+}
+
+.figure.left_figure {
+    float: left;
+}
+
+.figure.block_figure {
+    display: block;
+}
+
+figcaption {
+    margin: 5px;
+    text-align: center;
+
+}
+
+.info_img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+table, td {
+    border: white solid 2px;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+ul li {
+    list-style-image: url('https://64.media.tumblr.com/1314a25f8c332709e06e7585bd387ea4/0804923996ff87fa-8d/s75x75_c1/5935338f0e60e3255b8965aeb84a13e98ba6d510.gifv')
+}
+
+/*footer*/
+footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    min-height: 150px;
+    background-color: #c6a1d5;
+    display: grid;
+}
+
+.footer_item {
+    display: inline-block;
+    background-color: #ffdbe0;
+    padding: 10px;
+    vertical-align: middle;
+    width: 30%;
+    text-align: center;
+    font-family: DengXian, serif;
+    font-size: 6mm;
+}
+
+
