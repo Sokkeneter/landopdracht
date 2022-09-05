@@ -9,5 +9,9 @@ app.get('/', function (req, res) {
     res.sendFile(("index.html"), {__dirname})
 })
 
-// Start the Express server
-app.listen(3000, () => console.log('Server running on port 3000!'));
+const port = process.env.PORT || 3000;
+
+app.listen(port)
+//https://stackoverflow.com/questions/28706180/setting-the-port-for-node-js-server-on-heroku
+//literally know nothing about express
+//why didnt they teach me this in school
