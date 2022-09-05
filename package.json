@@ -5,12 +5,15 @@
   "main": "index.html",
   "scripts": {
     "start": "npm run open",
-    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  },
   "devDependencies": {
-    "concurrently": "^7.3.0",
     "http-server": "^14.1.1"
   }
 }
